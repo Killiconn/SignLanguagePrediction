@@ -1,0 +1,122 @@
+Results from running the following model with different dropout rates:
+
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_27 (Conv2D)           (None, 74, 74, 16)        800       
+_________________________________________________________________
+activation_45 (Activation)   (None, 74, 74, 16)        0         
+_________________________________________________________________
+max_pooling2d_18 (MaxPooling (None, 37, 37, 16)        0         
+_________________________________________________________________
+conv2d_28 (Conv2D)           (None, 17, 17, 32)        12832     
+_________________________________________________________________
+activation_46 (Activation)   (None, 17, 17, 32)        0         
+_________________________________________________________________
+conv2d_29 (Conv2D)           (None, 15, 15, 32)        9248      
+_________________________________________________________________
+activation_47 (Activation)   (None, 15, 15, 32)        0         
+_________________________________________________________________
+max_pooling2d_19 (MaxPooling (None, 7, 7, 32)          0         
+_________________________________________________________________
+dropout_18 (Dropout)         (None, 7, 7, 32)          0         
+_________________________________________________________________
+flatten_9 (Flatten)          (None, 1568)              0         
+_________________________________________________________________
+dense_18 (Dense)             (None, 32)                50208     
+_________________________________________________________________
+activation_48 (Activation)   (None, 32)                0         
+_________________________________________________________________
+dropout_19 (Dropout)         (None, 32)                0         
+_________________________________________________________________
+dense_19 (Dense)             (None, 26)                858       
+_________________________________________________________________
+activation_49 (Activation)   (None, 26)                0         
+=================================================================
+Total params: 73,946
+Trainable params: 73,946
+Non-trainable params: 0
+_________________________________________________________________
+
+Note : Trained on 49184 samples, validated on 8930 samples
+
+_________________________________________________________________
+
+Epoch 1/2
+49184/49184 [==============================] - 173s 4ms/sample - loss: 1.4441 - acc: 0.5371 - val_loss: 4.3889 - val_acc: 0.2935
+Epoch 2/2
+49184/49184 [==============================] - 174s 4ms/sample - loss: 0.3541 - acc: 0.8768 - val_loss: 5.8108 - val_acc: 0.3222
+This model had a dropout rate of: 0.0
+_________________________________________________________________
+
+Epoch 1/2
+49184/49184 [==============================] - 178s 4ms/sample - loss: 1.6013 - acc: 0.4857 - val_loss: 3.5920 - val_acc: 0.3109
+Epoch 2/2
+49184/49184 [==============================] - 174s 4ms/sample - loss: 0.5595 - acc: 0.7975 - val_loss: 3.7645 - val_acc: 0.3475
+This model had a droput rate of: 0.1
+_________________________________________________________________
+
+Epoch 1/2
+49184/49184 [==============================] - 176s 4ms/sample - loss: 1.9033 - acc: 0.3829 - val_loss: 2.8539 - val_acc: 0.2786
+Epoch 2/2
+49184/49184 [==============================] - 176s 4ms/sample - loss: 0.8620 - acc: 0.6840 - val_loss: 3.1355 - val_acc: 0.3354
+This model had a droput rate of: 0.2
+_________________________________________________________________
+
+Epoch 1/2
+49184/49184 [==============================] - 178s 4ms/sample - loss: 2.1638 - acc: 0.3119 - val_loss: 3.0178 - val_acc: 0.2636
+Epoch 2/2
+49184/49184 [==============================] - 177s 4ms/sample - loss: 1.0765 - acc: 0.6059 - val_loss: 2.9688 - val_acc: 0.3704
+This model had a droput rate of: 0.3
+_________________________________________________________________
+
+Epoch 1/2
+49184/49184 [==============================] - 177s 4ms/sample - loss: 2.3802 - acc: 0.2454 - val_loss: 2.6608 - val_acc: 0.2878
+Epoch 2/2
+49184/49184 [==============================] - 178s 4ms/sample - loss: 1.3142 - acc: 0.5175 - val_loss: 2.4271 - val_acc: 0.3708
+This model had a droput rate of: 0.4
+_________________________________________________________________
+
+Epoch 1/2
+49184/49184 [==============================] - 175s 4ms/sample - loss: 2.6014 - acc: 0.1937 - val_loss: 2.6034 - val_acc: 0.2106
+Epoch 2/2
+49184/49184 [==============================] - 176s 4ms/sample - loss: 1.6219 - acc: 0.4167 - val_loss: 2.3737 - val_acc: 0.3460
+This model had a droput rate of: 0.5
+_________________________________________________________________
+
+Epoch 1/2
+49184/49184 [==============================] - 175s 4ms/sample - loss: 2.7914 - acc: 0.1405 - val_loss: 2.5134 - val_acc: 0.1945
+Epoch 2/2
+49184/49184 [==============================] - 178s 4ms/sample - loss: 1.9431 - acc: 0.3099 - val_loss: 2.1604 - val_acc: 0.2861
+This model had a droput rate of: 0.6
+_________________________________________________________________
+
+Epoch 1/2
+49184/49184 [==============================] - 178s 4ms/sample - loss: 3.0818 - acc: 0.0824 - val_loss: 2.9804 - val_acc: 0.1113
+Epoch 2/2
+49184/49184 [==============================] - 175s 4ms/sample - loss: 2.4957 - acc: 0.1881 - val_loss: 2.5274 - val_acc: 0.2258
+This model had a droput rate of: 0.7
+_________________________________________________________________
+
+Epoch 1/2
+49184/49184 [==============================] - 172s 4ms/sample - loss: 3.2241 - acc: 0.0531 - val_loss: 3.1781 - val_acc: 0.0756
+Epoch 2/2
+49184/49184 [==============================] - 173s 4ms/sample - loss: 3.0336 - acc: 0.0952 - val_loss: 2.9125 - val_acc: 0.1209
+This model had a droput rate of: 0.8
+_________________________________________________________________
+
+Epoch 1/2
+49184/49184 [==============================] - 175s 4ms/sample - loss: 3.2550 - acc: 0.0404 - val_loss: 3.2572 - val_acc: 0.0386
+Epoch 2/2
+49184/49184 [==============================] - 174s 4ms/sample - loss: 3.2536 - acc: 0.0424 - val_loss: 3.2581 - val_acc: 0.0386
+_________________________________________________________________
+
+** Conclusion **
+
+The gap between accuracy and validation accuracy steadily reduced until dropout values 0.6 and 0.7.
+At 0.7, the validation accuracy was greater than the accuracy, and this was also true for 0.8 and 0.9.
+However, accuracy and validation accuracy where closet at 0.6 i.e. a difference of 2.38 percent.
+Values in the range 0.0 to 0.4 resulted in severe overfitting.
+Values 0.8 and 0.9 resulted in severe underfitting.
+
+In conclusion, a dropout value of 0.6 or 0.7 would seem to be the best dropout values to prevent overfitting and underfitting.
